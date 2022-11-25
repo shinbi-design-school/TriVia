@@ -16,7 +16,8 @@ CREATE TABLE quiz
 	-- 問題の内容
 	content text NOT NULL COMMENT '問題の内容',
 	-- 問題の答え
-	answer int  COMMENT '問題の答え',
+	answer int NOT NULL COMMENT '問題の答え',
+
 	PRIMARY KEY (id)
 );
 
