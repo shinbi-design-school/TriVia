@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Are you OK?</title>
 </head>
 <body>
-<h1></h1>
+<h1>YEAH</h1>
 </body>
 </html>
 <!-- webappの下にjspおけば普通に起動できるが　 -->
