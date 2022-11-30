@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/*背景画像(黒板)*/
+body{
+  background-image: url("images/bg_school_room.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+/*タイトル文字*/
+.title{
+  display: flex;
+  flex-direction: column;
+}
+#keytitle{
+  font-size: 100px;/*主題のサイズ*/
+  color: white; 
+  margin: 0;
+  text-align: center;
+}
+#subtitle{
+  font-size: 25px;/*副題のサイズ*/
+  color: white; 
+  margin: 0;
+  text-align: center;
+}
+
+/*説明文*/
+h3{
+  text-align: center;
+  color: white;
+}
+
+/*チョーク*/
+div{
+  background-image: url("images/chalk_white.png");
+  background-repeat: no-repeat;
+  background-size: 250px;
+  background-position: center;
+}
+.chalk_w{
+  display: flex;
+  justify-content: center;
+}
+.chalk_w a{
+  width: 100px;
+  height: 35px; 
+  padding: 30px;
+  text-align: center;
+  color: black;
+}
+
+footer p{
+  text-align: center;
+  padding: 10px 0 0 0;
+}

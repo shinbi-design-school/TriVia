@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*背景画像(コルクボード)*/
+body{
+  background-image: url(../images/cork_board.png);
+  background-size:  1300px  755px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/*ホームボタン*/
+.home{
+  display: flex;
+  justify-content: flex-end; /*右側へ*/
+}
+.home a img{
+  width: 40px;  /*画像の縮小*/
+  height: 40px; 
+  padding: 25px;        /*位置*/
+  position: relative;
+  top: 30px;
+  right: 170px;
+}
