@@ -4,10 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Are you OK?</title>
+<title>TriVia</title>
 </head>
 <body>
-<h1>YEAH</h1>
+<form method="get" action = "${pageContext.request.contextPath}/servlet/Quiz">
+	<input type = "submit" value = "start" >
+</form>
 </body>
 </html>
 <!-- webappの下にjspおけば普通に起動できるが　 -->

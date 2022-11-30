@@ -14,7 +14,6 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/start_javaweb4/TopServlet")
 public class TopServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
 
     public TopServlet() {
         super();
