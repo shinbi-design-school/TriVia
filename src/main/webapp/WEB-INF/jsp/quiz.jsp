@@ -15,43 +15,28 @@
 <body style="text-align:center;" onload="timer()">
 
 	<h1 style="font-size: 2em;">問題</h1>
-	<div id="timer" style = "border: 3px red inset;">一応ここにタイマーおいてね♡</div>
-	  <form method="POST" action="${pageContext.request.contextPath} /servlet/result">
+	<div id="timer" style = "border: 3px red inset; ">一応ここにタイマーおいてね♡</div><br>
+	  <form method="GET" action="${pageContext.request.contextPath} /servlet/Result">
 	  <% int i = 1; 
 	for(Plate facter : list) { %>
 		<div style="display: inline-block; ">
 		<%=i%>   
 		<%=facter.getContent() %>
-		
-		<label><input type="radio" name="<%= facter.getId() %>" value="1" >〇</label>
-		<label><input type="radio" name="<%= facter.getId() %>" value="2" >×</label>
+		<input type="hidden" name="colAns<%= i %>" value=<%= facter.getAnswer() %>>
+		<label><input type="radio" name="yourAns<%=i%>" value="1" >〇</label>
+		<label><input type="radio" name="yourAns<%=i%>" value="2" >×</label>
+		<label><input type="radio" name="yourAns<%=i%>" value="0" checked="checked" style="display: none;"></label>
 		</div>
 		<br>
 		<%i++; %>
 	<% } %>
+	
+	<div style="visibility: hidden;">
+	<input id="answer" type="submit" value = "これ見えてるやつおりゅ？">
+	</div>
 	</form>
 	
-	<script>
-	function timer(){
-			var sec = 180;
-			var timerLocation = document.getElementById("timer");
-			var st = new Date();
-			var ed = new Date(st.getTime + sec * 1000);
-					timerLocation.innerHTML = "残り時間：　" + sec + "秒";
-			var count = sec;
-			var timerRun = setInterval(function(){
-					count--;
-					timerLocation.innerHTML="残り時間：　" + count + "秒";
-					st = new Date();
-					if(st.getTime() >= ed.getTime()){
-						clear.Interval(timerRun);
-						}
-
-
-				}, 1000);
-
-		}
-	</script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/timer.js"></script>
 	
 </body>
 </html>
