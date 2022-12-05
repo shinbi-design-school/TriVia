@@ -9,10 +9,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/quize.css">
 <title>Trivia | Let`s Quiz!</title>
 
 </head>
 <body style="text-align:center;" onload="timer()">
+
+  <header>
+    <div class="home">
+      <a href="top.html">
+        <img src="images/homeicon.png" alt="ホームボタン"></a>
+    </div>
+  </header>
 
 	<h1 style="font-size: 2em;">問題</h1>
 	<div id="timer" style = "border: 3px red inset; ">一応ここにタイマーおいてね♡</div><br>
