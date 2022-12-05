@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*背景画像(ノート)*/
+body{
+  background-image: url(images/zabuton_notebook.png);
+  background-attachment: fixed;	/*固定*/
+  background-size:  1000px  600px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/*ホームボタン*/
+.home{
+  display: flex;
+  justify-content: flex-end; /*右側へ配置*/
+}
+.home a img{
+  width: 40px;  	/*画像の縮小*/
+  height: 40px; 
+  padding: 25px;	/*位置*/
+  position: fixed;	/*固定*/
+  top: 30px;		/*上からの位置*/
+  right: 150px;
+}
+
+/*制限時間*/
+#timer{
+  display: flex;
+  justify-content: flex-start; /*左側へ配置*/
+  position: fixed;	/*固定*/
+  top: 6px;			/*上からの位置*/
+}

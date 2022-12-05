@@ -2,8 +2,8 @@
 
 /*背景画像(コルクボード)*/
 body{
-  background-image: url(../images/cork_board.png);
-  background-size:  1300px  755px;
+  background-image: url(images/cork_board.png);
+  background-size:  1250px  585px;
   background-repeat: no-repeat;
   background-position: top center;
 }
