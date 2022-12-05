@@ -5,13 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/top.css">
-<title>TriVia</title>
+<title>TriVian | タイトル</title>
 </head>
-
-<body>
-<form method="get" action = "${pageContext.request.contextPath}/servlet/Quiz">
-	<input type = "submit" value = "start" >
-</form>
 
 <body>
   <top class="title">
@@ -27,7 +22,9 @@
 
   <div>
     <div class="chalk_w">
-      <a href="quize.html">スタート</a>
+      <form method="get" action = "${pageContext.request.contextPath}/servlet/Quiz">
+	<input type = "submit" value = "スタート" >
+	</form>
     </div>
   </div>
 

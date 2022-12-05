@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class TopServlet
  */
-@WebServlet("/start_javaweb4/TopServlet")
+@WebServlet("/servlet/TopServlet")
 public class TopServlet extends HttpServlet {
 
     public TopServlet() {

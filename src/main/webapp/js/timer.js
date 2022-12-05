@@ -1,5 +1,4 @@
-function timer() {
-	var sec = 30;
+function timer(sec) {
 	var timerLocation = document.getElementById("timer");
 	var st = new Date();
 	var ed = new Date(st.getTime() + sec * 1000);

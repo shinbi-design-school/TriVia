@@ -29,6 +29,7 @@ public class QuizServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
+
 			Connection connection = DBUtil.connect();
 			DAO dao = new DAO(connection);
 			String jsp = "/WEB-INF/jsp/quiz.jsp";

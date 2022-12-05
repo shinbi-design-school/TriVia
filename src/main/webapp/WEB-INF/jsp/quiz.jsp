@@ -9,20 +9,20 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Trivia | Let`s Quiz!</title>
+<title>TriVian | Let`s Quiz!</title>
 
 </head>
-<body style="text-align:center;" onload="timer()">
+<body style="text-align:center;" onload="timer(30)">
 
 	<h1 style="font-size: 2em;">問題</h1>
 	<div id="timer" style = "border: 3px red inset; ">一応ここにタイマーおいてね♡</div><br>
-	  <form method="GET" action="${pageContext.request.contextPath} /servlet/Result">
+	  <form method="GET" action="${pageContext.request.contextPath}/servlet/Result">
 	  <% int i = 1; 
 	for(Plate facter : list) { %>
 		<div style="display: inline-block; ">
 		<%=i%>   
 		<%=facter.getContent() %>
-		<input type="hidden" name="colAns<%= i %>" value=<%= facter.getAnswer() %>>
+		<input type="hidden" name="colAns<%=i%>" value=<%= facter.getAnswer() %>>
 		<label><input type="radio" name="yourAns<%=i%>" value="1" >〇</label>
 		<label><input type="radio" name="yourAns<%=i%>" value="2" >×</label>
 		<label><input type="radio" name="yourAns<%=i%>" value="0" checked="checked" style="display: none;"></label>
