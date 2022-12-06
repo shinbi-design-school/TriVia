@@ -43,8 +43,8 @@ div{
   justify-content: center;
 }
 .chalk_w a{
-  width: 100px;
-  height: 40px; 
+  width: 100px;			/*画像の幅*/
+  height: 40px; 		/*画像の高さ*/
   padding: 30px;
   text-align: center;
   color: black;

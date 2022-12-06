@@ -14,10 +14,10 @@ body{
   justify-content: flex-end; /*右側へ*/
 }
 .home a img{
-  width: 40px;  /*画像の縮小*/
-  height: 40px; 
-  padding: 25px;        /*位置*/
+  width: 40px;  		/*画像の幅*/
+  height: 40px; 		/*画像の高さ*/
+  padding: 25px;		/*位置*/
   position: relative;
-  top: 30px;
-  right: 170px;
+  top: 30px;			/*上からの位置*/
+  right: 170px;			/*右からの位置*/
 }

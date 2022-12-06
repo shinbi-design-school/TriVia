@@ -15,8 +15,8 @@ body{
   justify-content: flex-end; /*右側へ配置*/
 }
 .home a img{
-  width: 40px;  	/*画像の縮小*/
-  height: 40px; 
+  width: 40px;  	/*画像の幅*/
+  height: 40px; 	/*画像の高さ*/
   padding: 25px;	/*位置*/
   position: fixed;	/*固定*/
   top: 30px;		/*上からの位置*/
