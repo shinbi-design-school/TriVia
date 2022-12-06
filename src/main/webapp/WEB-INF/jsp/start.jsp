@@ -10,7 +10,7 @@
 
 <body>
   <top class="title">
-    <p id="keytitle">TriVian</p>
+    <p id="keytitle" title="ようこそ！">TriVian</p>
     <p id="subtitle">~トリビアン~</p>
   </top>
 
