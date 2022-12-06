@@ -49,18 +49,18 @@
 	<h3 style="text-align:center;"><%=message%></h3>
 	
 	<%if(rank.matches(".*金.*")){ %>
-	<img src="undoukai_torophy_gold.png" alt="金トロフィ" title="金トロフィ">
+	<img src="${pageContext.request.contextPath}/css/images/undoukai_torophy_gold.png" alt="金トロフィ" title="金トロフィ">
 	
 	<%}else if(rank.matches(".*銀.*")){ %>
-	<img src="undoukai_torophy_silver.png" alt="銀トロフィ" title="銀トロフィ">
+	<img src="${pageContext.request.contextPath}/css/images/undoukai_torophy_silver.png" alt="銀トロフィ" title="銀トロフィ">
 	
 	<%}else if(rank.matches(".*銅.*")){ %>
-	<img src="undoukai_torophy_bronze.png" alt="銅トロフィ" title="銅トロフィ">
+	<img src="${pageContext.request.contextPath}/css/images/undoukai_torophy_bronze.png" alt="銅トロフィ" title="銅トロフィ">
 	
 	<%}else if(rank.matches(".*道端の小石.*")){ %>
-	
+		画像なんかねえよ。
 	<%}else{%>
-	<img src="undoukai_goddess" alt="goddess" title="崇めよ崇めよ崇めよ崇めよ崇めよ(ry">	
+	<img src="${pageContext.request.contextPath}/css/images/undoukai_goddess.png" alt="goddess" title="崇めよ崇めよ崇めよ崇めよ崇めよ(ry">	
 	<% }%>
 	
 	<form method="GET" action="${pageContext.request.contextPath}/servlet/TopServlet">
