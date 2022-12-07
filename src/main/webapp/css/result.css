@@ -22,7 +22,17 @@ body{
   right: 170px;			/*右からの位置*/
 }
 
+
 #title{
 	margin: 0 50%;
-	
 }
+
+/*トロフィー画像*/
+.trophy{
+  text-align: center;
+  
+  width: 50px;  		/*画像の幅*/
+  height: 40px; 		/*画像の高さ*/
+  margin-left : auto;
+  margin-right : auto;
+  }

@@ -4,27 +4,23 @@ import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class Result
- */
-@WebServlet("/servlet/Result")
 public class ResultServlet extends HttpServlet {
 
-	public ResultServlet() {
-		super();
-	}
+    public ResultServlet() {
+        super();
+    }
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
 
 
-		int resCount = 0; //正誤に関わらず解いた数のカウント
-		int colCount = 0; //正答数
+        int resCount = 0; //正誤に関わらず解いた数のカウント
+        int colCount = 0; //正答数
+
 
 		for (int i = 1; i <= 100; i++) {
 			int tempYourAns = Integer.parseInt(request.getParameter("yourAns" + i));
