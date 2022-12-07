@@ -13,7 +13,7 @@
 <title>Trivia | Let`s Quiz!</title>
 
 </head>
-<body style="text-align:center;" onload="timer(1)">
+<body style="text-align:center;" onload="timer(120)">
 
   <header>
     <div class="home">

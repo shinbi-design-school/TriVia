@@ -71,7 +71,7 @@
   </div>
   <%}else if(rank.matches(".*道端の小石.*")){ %>
   <div class="trophy">
-    <img src="${pageContext.request.contextPath}/css/images/nature_stone_ishi.png" alt="道端の小石" title="道端の小石">
+    <img src="${pageContext.request.contextPath}/css/images/nature_stone_ishi1.png" alt="道端の小石" title="道端の小石">
   </div>
   <%}else{%>
   <img src="${pageContext.request.contextPath}/css/images/undoukai_goddess.png" alt="goddess" title="崇めよ崇めよ崇めよ崇めよ崇めよ(ry">	
