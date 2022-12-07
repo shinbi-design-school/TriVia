@@ -19,8 +19,8 @@
 			message+="実際のあなたには「<span style=color:red >意思</span>」すらない...。";
 			rank="<span style= color:darkgrey>道端の小石</span>";
 		}else{
-			message+="おおっ神がご降臨なすった！！崇めねば！！！";	
-			rank="<span id = god>神</span>";
+			message+="<span class = god>おおっ神がご降臨なすった！！崇めねば！！！</span>";	
+			rank="<span class = god>神</span>";
 		}
 
 	%>
@@ -33,7 +33,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/result.css">
 <title>TriVian | リザルト！</title>
 <style>
-	#god{
+	.god{
 		 color: #40E0D0;
   		background: -webkit-linear-gradient(0deg,#40E0D0, #FF8C00, #FF0080);
   		-webkit-background-clip: text;
@@ -47,32 +47,32 @@
   <header>
     <div class="home">
       <a href="${pageContext.request.contextPath}/servlet/TopServlet">
-        <img src="${pageContext.request.contextPath}/images/homeicon.png" alt="ホームボタン"></a>
+        <img src="${pageContext.request.contextPath}/css/images/homeicon.png" alt="ホームボタン"></a>
     </div>
   </header>
-
+  
 	<h2 style="text-align:center">～結果発表～</h2>
 	<h4 style="margin-left:30%;">あなたのランクは...</h4>
 	<h1 style="text-align:center;"><%=rank%>ランク</h1>
 	<h4 style="text-align:right; margin-right:40%;">です！</h4>
 	<h3 style="text-align:center;"><%=message%></h3>
-	
+	<div id="rankimage" style="margin: 0 auto;">
 	<%if(rank.matches(".*金.*")){ %>
-	<img src="${pageContext.request.contextPath}/css/images/undoukai_torophy_gold.png" alt="金トロフィ" title="金トロフィ">
+	<img src="${pageContext.request.contextPath}/css/images/undoukai_trophy_gold.png" alt="金トロフィ" title="金トロフィ">
 	
 	<%}else if(rank.matches(".*銀.*")){ %>
-	<img src="${pageContext.request.contextPath}/css/images/undoukai_torophy_silver.png" alt="銀トロフィ" title="銀トロフィ">
+	<img src="${pageContext.request.contextPath}/css/images/undoukai_trophy_silver.png" alt="銀トロフィ" title="銀トロフィ">
 	
 	<%}else if(rank.matches(".*銅.*")){ %>
-	<img src="${pageContext.request.contextPath}/css/images/undoukai_torophy_bronze.png" alt="銅トロフィ" title="銅トロフィ">
+	<img src="${pageContext.request.contextPath}/css/images/undoukai_trophy_bronze.png" alt="銅トロフィ" title="銅トロフィ">
 	
 	<%}else if(rank.matches(".*道端の小石.*")){ %>
 		画像なんかねえよ。
 	<%}else{%>
 	<img src="${pageContext.request.contextPath}/css/images/undoukai_goddess.png" alt="goddess" title="崇めよ崇めよ崇めよ崇めよ崇めよ(ry">	
 	<% }%>
-	
-	<form method="GET" action="${pageContext.request.contextPath}/servlet/TopServlet">
+	</div>
+	<form id="title" method="GET" action="${pageContext.request.contextPath}/servlet/TopServlet">
 		<input type="submit" value="タイトルへ戻る" >
 	</form>
 	

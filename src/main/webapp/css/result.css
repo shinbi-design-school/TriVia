@@ -21,3 +21,8 @@ body{
   top: 30px;			/*上からの位置*/
   right: 170px;			/*右からの位置*/
 }
+
+#title{
+	margin: 0 50%;
+	
+}

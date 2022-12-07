@@ -18,7 +18,7 @@
   <header>
     <div class="home">
 	  <a href="${pageContext.request.contextPath}/servlet/TopServlet">
-        <img src="${pageContext.request.contextPath}/images/homeicon.png" alt="ホームボタン"></a>
+        <img src="${pageContext.request.contextPath}/css/images/homeicon.png" alt="ホームボタン"></a>
     </div>
   </header>
 

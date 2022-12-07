@@ -26,7 +26,7 @@ public class ResultServlet extends HttpServlet {
 		int resCount = 0; //正誤に関わらず解いた数のカウント
 		int colCount = 0; //正答数
 
-		for (int i = 1; i < 100; i++) {
+		for (int i = 1; i <= 100; i++) {
 			int tempYourAns = Integer.parseInt(request.getParameter("yourAns" + i));
 			int tempColAns = Integer.parseInt(request.getParameter("colAns" + i));
 			if (tempYourAns == tempColAns) {
@@ -55,9 +55,9 @@ public class ResultServlet extends HttpServlet {
 			return "道端の小石";
 		}else if(colCount<40){ //銅トロフィー
 			return "銅";
-		}else if(colCount<60) { //銀トロフィー
+		}else if(colCount<65) { //銀トロフィー
 			return "銀";
-		}else if(colCount<99) { //金トロフィー
+		}else if(colCount<100) { //金トロフィー
 			return "金";
 		}else {
 			return "神"; //神の領域....これ達成できるやつおりゅ？
