@@ -22,12 +22,21 @@ body{
   right: 70px;			/*右からの位置*/
 }
 
+/*余白の調整*/
+h2{margin:0;}
+h4{margin:10px;}
+h3{margin:0;}
+
 /*トロフィー画像*/
-.trophy{
-  display: flex;
-  justify-content:center;/*中央へ*/
-}
 .trophy img{
   position:relative;
-  width:170px;
+  width:165px;			/*画像のサイズ*/
+}
+.left{
+  position:absolute;
+  left:50px;			/*左からの位置*/
+}
+.right{
+  position:absolute;
+  right:-800px;			/*右側の位置*/
 }

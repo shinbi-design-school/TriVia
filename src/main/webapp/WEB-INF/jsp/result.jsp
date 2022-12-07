@@ -59,22 +59,27 @@
   
   <%if(rank.matches(".*金.*")){ %>
   <div class="trophy">
-  <img src="${pageContext.request.contextPath}/css/images/undoukai_trophy_gold.png" alt="金トロフィ" title="金トロフィ">
+    <img class="left" src="${pageContext.request.contextPath}/css/images/undoukai_trophy_gold.png" alt="金トロフィ" title="金トロフィ">
+    <img class="right" src="${pageContext.request.contextPath}/css/images/undoukai_trophy_gold.png" alt="金トロフィ" title="金トロフィ">
   </div>
   <%}else if(rank.matches(".*銀.*")){ %>
   <div class="trophy">
-  <img src="${pageContext.request.contextPath}/css/images/undoukai_trophy_silver.png" alt="銀トロフィ" title="銀トロフィ">
+    <img class="left" src="${pageContext.request.contextPath}/css/images/undoukai_trophy_silver.png" alt="銀トロフィ" title="銀トロフィ">
+    <img class="right" src="${pageContext.request.contextPath}/css/images/undoukai_trophy_silver.png" alt="銀トロフィ" title="銀トロフィ">
   </div>
   <%}else if(rank.matches(".*銅.*")){ %>
   <div class="trophy">
-  <img src="${pageContext.request.contextPath}/css/images/undoukai_trophy_bronze.png" alt="銅トロフィ" title="銅トロフィ">
+    <img class="left" src="${pageContext.request.contextPath}/css/images/undoukai_trophy_bronze.png" alt="銅トロフィ" title="銅トロフィ">
+    <img class="right" src="${pageContext.request.contextPath}/css/images/undoukai_trophy_bronze.png" alt="銅トロフィ" title="銅トロフィ">
   </div>
   <%}else if(rank.matches(".*道端の小石.*")){ %>
   <div class="trophy">
-    <img src="${pageContext.request.contextPath}/css/images/nature_stone_ishi1.png" alt="道端の小石" title="道端の小石">
+    <img class="left" src="${pageContext.request.contextPath}/css/images/nature_stone_ishi1.png" alt="道端の小石" title="道端の小石">
+    <img class="right" src="${pageContext.request.contextPath}/css/images/nature_stone_ishi1.png" alt="道端の小石" title="道端の小石">
   </div>
   <%}else{%>
-  <img src="${pageContext.request.contextPath}/css/images/undoukai_goddess.png" alt="goddess" title="崇めよ崇めよ崇めよ崇めよ崇めよ(ry">	
+    <img class="left" src="${pageContext.request.contextPath}/css/images/undoukai_goddess.png" alt="goddess" title="崇めよ崇めよ崇めよ崇めよ崇めよ(ry">	
+    <img class="right" src="${pageContext.request.contextPath}/css/images/undoukai_goddess.png" alt="goddess" title="崇めよ崇めよ崇めよ崇めよ崇めよ(ry">	
   <% }%>
   
   <form method="GET" action="${pageContext.request.contextPath}/servlet/TopServlet">
