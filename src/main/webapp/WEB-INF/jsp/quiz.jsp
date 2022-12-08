@@ -17,7 +17,9 @@
 
 <script type="text/javascript">
 function ring() {
-	   document.getElementById("button").play();
+		var button = document.getElementById("button");
+		button.currentTime = 0;
+	   button.play();
 	}
 </script>
 <body style="text-align:center;" onload="timer(5)">
