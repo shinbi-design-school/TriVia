@@ -8,7 +8,7 @@
 <title>TriVian | タイトル</title>
 </head>
 
-<body onload="music()">
+<body>
   <top class="title">
     <p id="keytitle" title="ようこそ！">TriVian</p>
     <p id="subtitle">~トリビアン~</p>

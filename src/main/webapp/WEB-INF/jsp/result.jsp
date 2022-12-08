@@ -76,10 +76,12 @@
     <img src="${pageContext.request.contextPath}/css/images/nature_stone_ishi.png" alt="道端の小石" title="道端の小石">
   </div>
   <%}else{%>
+  <div class="trophy">
   <img src="${pageContext.request.contextPath}/css/images/undoukai_goddess.png" alt="goddess" title="崇めよ崇めよ崇めよ崇めよ崇めよ(ry">	
+  </div>
   <% }%>
   
-  <form method="GET" action="${pageContext.request.contextPath}/servlet/TopServlet">
+  <form id="title" method="GET" action="${pageContext.request.contextPath}/servlet/TopServlet">
     <input type="submit" value="タイトルへ戻る" >
   </form>
 </body>

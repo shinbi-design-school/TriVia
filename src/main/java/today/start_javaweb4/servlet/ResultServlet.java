@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/servlet/Quiz")
+@WebServlet("/servlet/Result")
 public class ResultServlet extends HttpServlet {
 
     public ResultServlet() {
