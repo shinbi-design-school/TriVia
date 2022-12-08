@@ -22,12 +22,27 @@ body{
   right: 60px;			/*右からの位置*/
 }
 
+
+#title{
+	margin: 0 45%;
+}
+
 /*余白の調整*/
 h2{margin:0;}
 h4{margin:10px;}
 h3{margin:0;}
 
 /*トロフィー画像*/
+
+.trophy{
+  text-align: center;
+  
+  width: 50px;  		/*画像の幅*/
+  height: 40px; 		/*画像の高さ*/
+  margin-left : auto;
+  margin-right : auto;
+  }
+  
 .trophy img{
   position:relative;
   width:165px;			/*画像のサイズ*/
@@ -51,3 +66,4 @@ footer p small{
   position:relative;	/*↓の設定のために必要*/
   bottom:33px;			/*下からの位置*/
 }
+

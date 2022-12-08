@@ -33,6 +33,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/result.css">
 <title>TriVian | リザルト！</title>
 <style>
+
   #god{
      color: #40E0D0;
       background: -webkit-linear-gradient(0deg,#40E0D0, #FF8C00, #FF0080);
@@ -40,6 +41,7 @@
       -webkit-text-fill-color: transparent;
       font-size:2em;
   }
+
 </style>
 </head>
 <body>
@@ -78,11 +80,13 @@
     <img class="right" src="${pageContext.request.contextPath}/css/images/nature_stone_ishi1.png" alt="道端の小石" title="道端の小石">
   </div>
   <%}else{%>
+    <div class="trophy">
     <img class="left" src="${pageContext.request.contextPath}/css/images/undoukai_goddess.png" alt="goddess" title="崇めよ崇めよ崇めよ崇めよ崇めよ(ry">	
-    <img class="right" src="${pageContext.request.contextPath}/css/images/undoukai_goddess.png" alt="goddess" title="崇めよ崇めよ崇めよ崇めよ崇めよ(ry">	
+    <img class="right" src="${pageContext.request.contextPath}/css/images/undoukai_goddess.png" alt="goddess" title="崇めよ崇めよ崇めよ崇めよ崇めよ(ry">
+    </div>	
   <% }%>
   
-  <form method="GET" action="${pageContext.request.contextPath}/servlet/TopServlet">
+  <form id="title" method="GET" action="${pageContext.request.contextPath}/servlet/TopServlet">
     <input type="submit" value="タイトルへ戻る" >
   </form>
   

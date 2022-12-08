@@ -13,11 +13,23 @@
 <title>Trivia | Let`s Quiz!</title>
 
 </head>
-<body style="text-align:center;" onload="timer(50)">
 
+<script type="text/javascript">
+function ring() {
+	   document.getElementById("button").play();
+	}
+</script>
+<body style="text-align:center;" onload="timer(30)">
+
+
+	<audio id="button" preload="auto">
+   <source src="${pageContext.request.contextPath}/css/select.mp3" type="audio/mp3">
+   </audio>
   <header>
     <div class="home">
-    <a href="${pageContext.request.contextPath}/servlet/TopServlet">
+
+	  <a href="${pageContext.request.contextPath}/servlet/TopServlet">
+
         <img src="${pageContext.request.contextPath}/css/images/homeicon.png" alt="ホームボタン"></a>
     </div>
   </header>
@@ -28,12 +40,12 @@
     <% int i = 1; 
   for(Plate facter : list) { %>
     <div style="display: inline-block; ">
-    <%=i%>   
+    <span style="font-weight:900;"><%=i%>:</span>   
     <%=facter.getContent() %>
     <input type="hidden" name="colAns<%=i%>" value=<%= facter.getAnswer() %>>
-    <label><input type="radio" name="yourAns<%=i%>" value="1" >〇</label>
-    <label><input type="radio" name="yourAns<%=i%>" value="2" >×</label>
-    <label><input type="radio" name="yourAns<%=i%>" value="0" checked="checked" style="display: none;"></label>
+    <input type="radio" name="yourAns<%=i%>" value="1" id="circle<%=i%>" onclick="ring()"><label for="circle<%=i%>" class="label">○</label>
+    <input type="radio" name="yourAns<%=i%>" value="2" id="cross<%=i%>" onclick="ring()"><label for="cross<%=i%>" class="label"> × </label>
+    <input type="radio" name="yourAns<%=i%>" value="0" checked="checked" style="display: none;">
     </div>
     <br>
     <%i++; %>

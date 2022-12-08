@@ -13,7 +13,7 @@
     <p id="keytitle" title="ようこそ！">TriVian</p>
     <p id="subtitle">~トリビアン~</p>
   </top>
-
+<audio src="${pageContext.request.contextPath}/css/chaim.mp3" autoplay></audio>
   <h3>
     <p>・これは制限時間付きのクイズ１００問ゲームです。</p>
     <p>・〇✕のボタンを押して答えを選んで下さい。</p>
@@ -31,6 +31,7 @@
   <footer>
     <p><small>&copy; 2022 TriVian.</small></p>
   </footer>
+  
 
 </body>
 </html>

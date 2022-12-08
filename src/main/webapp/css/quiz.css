@@ -7,6 +7,8 @@ body{
   background-size:  1000px  600px;
   background-repeat: no-repeat;	/*画像を繰り返し表示しない*/
   background-position: top center;
+  line-height:2em;
+  cursor:url(pencil.cur), auto;
 }
 
 /*ホームボタン*/
@@ -28,7 +30,8 @@ body{
   display: flex;
   justify-content: flex-start; /*左側へ配置*/
   position: fixed;	/*固定*/
-  top: 6px;			/*上からの位置*/
+  top: 6px;		
+  background:darksalmon;	/*上からの位置*/
 }
 
 /*問題文(form)*/
@@ -46,4 +49,30 @@ form div{
 /*フッター*/
 footer p{
   text-align: center;
+}
+
+input[type=radio]{
+		display: none;
+}
+		
+.label{
+	border:salmon outset 4px;
+	padding:0px 5px;
+	border-radius:5px;
+	transition: 0.7s;
+	cursor:url(pencil.cur), auto;
+	background:lightsalmon;
+}
+
+input[type="radio"]:checked + label{
+	background:blue;
+	color:yellow;
+	font-size: 1.2em;
+	font-weight:1000;
+	border:darkblue inset 4.5px;
+}
+
+.label:hover{
+	background: yellow;
+	border: gold 4px double;
 }
