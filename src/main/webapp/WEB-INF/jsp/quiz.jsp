@@ -11,6 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/quiz.css">
+<link rel="icon" href="${pageContext.request.contextPath}/css/images/favicon.ico">
 <title>Trivia | Let`s Quiz!</title>
 
 </head>
@@ -22,7 +23,7 @@ function ring() {
 	   button.play();
 	}
 </script>
-<body style="text-align:center;" onload="timer(20)">
+<body style="text-align:center;" onload="timer(5)">
 
 
 	<audio id="button" preload="auto">

@@ -31,6 +31,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/popstate.js"></script>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/result.css">
+<link rel="icon" href="${pageContext.request.contextPath}/css/images/favicon.ico">
 <title>TriVian | リザルト！</title>
 <style>
 
