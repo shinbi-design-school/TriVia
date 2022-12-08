@@ -3,7 +3,7 @@
 /*背景画像(コルクボード)*/
 body{
   background-image: url(images/cork_board.png);
-  background-size:  1250px  585px;
+  background-size:  1500px  750px;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -16,10 +16,10 @@ body{
 .home a img{
   width: 40px;  		/*画像の幅*/
   height: 40px; 		/*画像の高さ*/
-  padding: 25px;		/*位置*/
+  padding: 30px;		/*位置*/
   position: relative;	/*↓の設定のために必要*/
-  top: 20px;			/*上からの位置*/
-  right: 60px;			/*右からの位置*/
+  top: 30px;			/*上からの位置*/
+  right: 70px;			/*右からの位置*/
 }
 
 /*タイトルに戻るボタン*/
@@ -27,33 +27,14 @@ body{
 	margin: 0 45%;
 }
 
-/*余白の調整*/
-h2{margin:0;}
-h4{margin:10px;}
-h3{margin:0;}
-
 /*トロフィー画像*/
-
 .trophy{
-  text-align: center;
-  
-  width: 50px;  		/*画像の幅*/
-  height: 40px; 		/*画像の高さ*/
-  margin-left : auto;
-  margin-right : auto;
-  }
-  
+  display:flex;
+  justify-content:space-between;
+}
 .trophy img{
-  position:relative;
-  width:165px;			/*画像のサイズ*/
-}
-.left{
-  position:absolute;
-  left:50px;			/*左からの位置*/
-}
-.right{
-  position:absolute;
-  right:-800px;			/*右側の位置*/
+  width:200px;			/*画像のサイズ*/
+  padding:5px 80px;		/*画像の位置*/
 }
 
 /*フッター*/
@@ -62,8 +43,8 @@ footer p{
   display:flex;
   justify-content:center;/*中央*/
 }
-footer p small{
-  position:relative;	/*↓の設定のために必要*/
-  bottom:33px;			/*下からの位置*/
-}
+/*footer p small{
+  *position:relative;*/	/*↓の設定のために必要*/
+  /*bottom:33px;*/			/*下からの位置*/
+/*}*/
 

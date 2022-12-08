@@ -19,7 +19,7 @@ function ring() {
 	   document.getElementById("button").play();
 	}
 </script>
-<body style="text-align:center;" onload="timer(30)">
+<body style="text-align:center;" onload="timer(20)">
 
 
 	<audio id="button" preload="auto">
