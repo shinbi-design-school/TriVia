@@ -19,7 +19,7 @@ body{
   padding: 30px;		/*位置*/
   position: relative;	/*↓の設定のために必要*/
   top: 30px;			/*上からの位置*/
-  right: 70px;			/*右からの位置*/
+  right: 85px;			/*右からの位置*/
 }
 
 /*タイトルに戻るボタン*/

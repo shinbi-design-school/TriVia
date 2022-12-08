@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/top.css">
+<link rel="icon" href="${pageContext.request.contextPath}/css/images/favicon.ico">
 <title>TriVian | タイトル</title>
 </head>
 

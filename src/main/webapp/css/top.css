@@ -41,6 +41,7 @@ div{
 .chalk_w{
   display: flex;
   justify-content: center;
+  margin-top:70px;		/*チョークの位置*/
 }
 .chalk_w a{
   width: 100px;			/*画像の幅*/

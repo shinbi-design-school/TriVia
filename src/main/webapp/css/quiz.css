@@ -25,25 +25,27 @@ body{
   right: 70px;
 }
 
+h1{margin:50px 5px 2px;}		/*問題(タイトル)の位置*/
+
 /*制限時間*/
 #timer{
   display: flex;
-  justify-content: flex-start; /*左側へ配置*/
-  position: fixed;	/*固定*/
+  justify-content: flex-start;	/*左側へ配置*/
+  position: fixed;				/*固定*/
   top: 6px;		
-  background:darksalmon;	/*上からの位置*/
+  background:darksalmon;		/*上からの位置*/
 }
 
 /*問題文(form)*/
 form{
   display:flex;
-  flex-direction:column;
+  flex-direction:column;		/*要素の並ぶ方向*/
   width:960px;
-  text-align:left;
+  text-align:left;				/*左寄せ*/
 }
 form div{
   position:relative;
-  left:140px;
+  left:140px;					/*左からの位置*/
 }
 
 /*フッター*/
