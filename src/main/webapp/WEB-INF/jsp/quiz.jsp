@@ -5,6 +5,7 @@
 <%@ page import="java.util.List" %>
     
     <%List<Plate> list = (List<Plate>)request.getAttribute("list"); %>
+    <% session.setAttribute("list", request.getAttribute("list"));%>
 <!DOCTYPE html>
 <html>
 <head>

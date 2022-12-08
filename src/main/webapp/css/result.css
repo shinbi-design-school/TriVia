@@ -25,6 +25,9 @@ body{
 /*タイトルに戻るボタン*/
 #title{
 	margin: 0 45%;
+	position:relative;
+	bottom: 165px;
+	
 }
 
 /*トロフィー画像*/

@@ -90,6 +90,10 @@
     <input type="submit" value="タイトルへ戻る" >
   </form>
   
+  <form method="GET" action="${pageContext.request.contextPath}/servlet/Quizlist">
+    <input type="submit" value="正誤表" >
+  </form>
+  
   <footer>
     <p><small>&copy; 2022 TriVian.</small></p>
   </footer>
