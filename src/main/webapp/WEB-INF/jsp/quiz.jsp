@@ -13,12 +13,13 @@
 <title>Trivia | Let`s Quiz!</title>
 
 </head>
+
 <script type="text/javascript">
 function ring() {
 	   document.getElementById("button").play();
 	}
 </script>
-<body style="text-align:center;" onload="timer(10)">
+<body style="text-align:center;" onload="timer(30)">
 
 	<audio id="button" preload="auto">
    <source src="${pageContext.request.contextPath}/css/select.mp3" type="audio/mp3">
