@@ -5,7 +5,7 @@ body{
   background-image: url(images/zabuton_notebook.png);
   background-attachment: fixed;	/*固定*/
   background-size:  1000px  600px;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;	/*画像を繰り返し表示しない*/
   background-position: top center;
 }
 
@@ -29,4 +29,21 @@ body{
   justify-content: flex-start; /*左側へ配置*/
   position: fixed;	/*固定*/
   top: 6px;			/*上からの位置*/
+}
+
+/*問題文(form)*/
+form{
+  display:flex;
+  flex-direction:column;
+  width:960px;
+  text-align:left;
+}
+form div{
+  position:relative;
+  left:140px;
+}
+
+/*フッター*/
+footer p{
+  text-align: center;
 }

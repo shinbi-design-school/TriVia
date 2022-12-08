@@ -17,9 +17,9 @@ body{
   width: 40px;  		/*画像の幅*/
   height: 40px; 		/*画像の高さ*/
   padding: 25px;		/*位置*/
-  position: relative;
-  top: 30px;			/*上からの位置*/
-  right: 70px;			/*右からの位置*/
+  position: relative;	/*↓の設定のために必要*/
+  top: 20px;			/*上からの位置*/
+  right: 60px;			/*右からの位置*/
 }
 
 /*余白の調整*/
@@ -39,4 +39,15 @@ h3{margin:0;}
 .right{
   position:absolute;
   right:-800px;			/*右側の位置*/
+}
+
+/*フッター*/
+footer p{
+  margin:0;				/*余白を消す*/
+  display:flex;
+  justify-content:center;/*中央*/
+}
+footer p small{
+  position:relative;	/*↓の設定のために必要*/
+  bottom:33px;			/*下からの位置*/
 }

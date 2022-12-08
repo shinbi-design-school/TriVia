@@ -86,5 +86,9 @@
     <input type="submit" value="タイトルへ戻る" >
   </form>
   
+  <footer>
+    <p><small>&copy; 2022 TriVian.</small></p>
+  </footer>
+  
 </body>
 </html>

@@ -13,7 +13,7 @@
 <title>Trivia | Let`s Quiz!</title>
 
 </head>
-<body style="text-align:center;" onload="timer(30)">
+<body style="text-align:center;" onload="timer(50)">
 
   <header>
     <div class="home">
@@ -45,6 +45,11 @@
   </form>
   
   <script type="text/javascript" src="${pageContext.request.contextPath}/js/timer.js"></script>
+  
+  <footer>
+    <p><small>&copy; 2022 TriVian.</small></p>
+  </footer>
+  
   
 </body>
 </html>
