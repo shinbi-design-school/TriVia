@@ -8,7 +8,7 @@ body{
   background-repeat: no-repeat;	/*画像を繰り返し表示しない*/
   background-position: top center;
   line-height:2em;
-  cursor:url(pencil.cur), auto;
+  cursor:url(pencil.cur), auto;	/*カーソル*/
 }
 
 /*ホームボタン*/
@@ -51,6 +51,7 @@ footer p{
   text-align: center;
 }
 
+/*〇✕ボタン*/
 input[type=radio]{
 		display: none;
 }
