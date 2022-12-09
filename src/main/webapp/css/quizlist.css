@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*背景画像(黒板)*/
+body{
+  background-image: url("images/bunbougu_kokuban.png");
+  background-attachment: fixed;	/*固定*/
+  background-size:1050px 800px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/*ホームボタン*/
+.home{
+  display: flex;
+  justify-content: flex-end; /*右側へ配置*/
+}
+.home a img{
+  width: 40px;  	/*画像の幅*/
+  height: 40px; 	/*画像の高さ*/
+  padding: 30px;	/*位置*/
+  position: fixed;	/*固定*/
+  top: 30px;		/*上からの位置*/
+  right: 145px;
+}
+
+/*戻るボタン*/
+.back{
+  display: flex;
+  justify-content: flex-end; /*右側へ配置*/
+}
+.back img{
+  width: 40px;  	/*画像の幅*/
+  height: 40px; 	/*画像の高さ*/
+  padding: 30px;	/*位置*/
+  position: fixed;	/*固定*/
+  bottom: 30px;		/*下からの位置*/
+  right: 145px;
+}
+
+/*フッター*/
+footer p{text-align: center;}

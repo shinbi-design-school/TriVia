@@ -10,9 +10,22 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
+  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/quizlist.css">
+  <link rel="icon" href="${pageContext.request.contextPath}/css/images/favicon.ico">
 <title> TriVian｜正誤表 </title>
+
 </head>
+
 <body>
+  <header>
+    <div class="home">
+      <a href="${pageContext.request.contextPath}/servlet/TopServlet">
+        <img src="${pageContext.request.contextPath}/css/images/homeicon.png" alt="ホームボタン"></a>
+    </div>
+  </header>
+  
+
 <table border=1 style="margin: auto;">
 <tr>
 <th>問題番号</th><th>問題文</th><th>解答</th>
@@ -34,5 +47,15 @@
 <% i++;
 	} %>
 </table>
+
+  <div class="back">
+    <a href="${pageContext.request.contextPath}/servlet/ResultServlet"><!-- resultに戻れない -->
+      <img src="${pageContext.request.contextPath}/css/images/return.png" alt="戻るボタン"></a>
+  </div>
+  
+  <footer>
+    <p><small>&copy; 2022 TriVian.</small></p>
+  </footer>
+  
 </body>
 </html>
