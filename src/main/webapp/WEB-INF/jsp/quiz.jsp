@@ -12,7 +12,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/quiz.css">
 <link rel="icon" href="${pageContext.request.contextPath}/css/images/favicon.ico">
-<title>Trivia | Let`s Quiz!</title>
+<title>TriVian | Let`s Quiz!</title>
 
 </head>
 
@@ -23,9 +23,9 @@ function ring() {
 	   button.play();
 	}
 </script>
-<body style="text-align:center;" onload="timer(5)">
+<body style="text-align:center;" onload="timer(180)">
 
-
+	<audio src="${pageContext.request.contextPath}/css/quiztime.mp3" autoplay loop></audio>
 	<audio id="button" preload="auto">
    <source src="${pageContext.request.contextPath}/css/select.mp3" type="audio/mp3">
    </audio>

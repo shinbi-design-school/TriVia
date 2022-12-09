@@ -7,9 +7,12 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/top.css">
 <link rel="icon" href="${pageContext.request.contextPath}/css/images/favicon.ico">
 <title>TriVian | タイトル</title>
+<script type=text/javascript”>
+	resizeTo(1300,746);
+</script>
 </head>
 
-<body>
+<body onload="resizeTo(1300,746)">
   <top class="title">
     <p id="keytitle" title="ようこそ！">TriVian</p>
     <p id="subtitle">~トリビアン~</p>

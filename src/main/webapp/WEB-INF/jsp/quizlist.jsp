@@ -10,7 +10,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> TriVia｜正誤表 </title>
+<title> TriVian｜正誤表 </title>
 </head>
 <body>
 <table border=1 style="margin: auto;">
