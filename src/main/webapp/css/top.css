@@ -80,6 +80,7 @@ input[type="submit"]{
   padding:10px 90px;
   font-weight:500;
   transition: 0.8s;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover{

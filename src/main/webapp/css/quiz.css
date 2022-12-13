@@ -25,6 +25,7 @@ body{
   position: fixed;	/*固定*/
   top: 45px;		/*上からの位置*/
   right: 120px;
+  cursor: pointer;
 }
 
 h1{margin:50px 5px 2px;}		/*問題(タイトル)の位置*/

@@ -64,6 +64,7 @@ footer p{
     border-left: solid 6px #58ad5a;
     font-weight: bold;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
 }
 
 .button.red {
