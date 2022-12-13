@@ -13,7 +13,9 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/quiz.css">
 <link rel="icon" href="${pageContext.request.contextPath}/css/images/favicon.ico">
 <title>TriVian | Let`s Quiz!</title>
-
+<script type=text/javascript”>
+	resizeTo(1536,746);
+</script>
 </head>
 
 <script type="text/javascript">
@@ -23,7 +25,7 @@ function ring() {
 	   button.play();
 	}
 </script>
-<body style="text-align:center;" onload="timer(180)">
+<body style="text-align:center;" onload="timer(20)">
 
 	<audio src="${pageContext.request.contextPath}/css/quiztime.mp3" autoplay loop></audio>
 	<audio id="button" preload="auto">
@@ -39,7 +41,7 @@ function ring() {
   </header>
 
   <h1 style="font-size: 2em;">問題</h1>
-  <div id="timer" style = "border: 3px red inset; ">一応ここにタイマーおいてね♡</div><br>
+  <div id="timer" style = "border: 3px red inset; ">スタート！！</div><br>
     <form method="GET" action="${pageContext.request.contextPath}/servlet/Result">
     <% int i = 1; 
   for(Plate facter : list) { %>

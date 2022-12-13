@@ -2,10 +2,10 @@
 
 /*背景画像(コルクボード)*/
 body{
-  background-image: url(images/cork_board.png);
-  background-size:  1500px  750px;
-  background-repeat: no-repeat;
-  background-position: top center;
+  background-image:url(images/paper.png), url(images/cork_board.png);
+  background-size: 680px 500px,1500px  750px;
+  background-repeat: no-repeat, no-repeat;
+  background-position:right 52% bottom 70%,top center;
 }
 
 /*ホームボタン*/
@@ -14,30 +14,39 @@ body{
   justify-content: flex-end; /*右側へ*/
 }
 .home a img{
-  width: 40px;  		/*画像の幅*/
-  height: 40px; 		/*画像の高さ*/
+  width: 60px;  		/*画像の幅*/
+  height: 60px; 		/*画像の高さ*/
   padding: 30px;		/*位置*/
   position: relative;	/*↓の設定のために必要*/
-  top: 30px;			/*上からの位置*/
-  right: 85px;			/*右からの位置*/
+  top: 45px;		/*上からの位置*/
+  right: 120px;			/*右からの位置*/
 }
 
-/*タイトルに戻るボタン*/
-#title{
+/*ボタン*/
+#menu{
 	margin: 0 45%;
 	position:relative;
-	bottom: 165px;
-	
+	bottom: 200px;
+	display: flex;
+	justify-content: center;
+}
+
+#menu input[type="submit"]{
+	margin:0 12px;
 }
 
 /*トロフィー画像*/
 .trophy{
   display:flex;
-  justify-content:space-between;
+  justify-content:space-around;
 }
 .trophy img{
-  width:200px;			/*画像のサイズ*/
-  padding:5px 80px;		/*画像の位置*/
+  width:250px;			/*画像のサイズ*/
+  height:250px;
+  padding:5px 400px;		/*画像の位置*/
+  position:relative;
+  bottom:7em;
+  right:1em;
 }
 
 /*フッター*/
@@ -46,6 +55,47 @@ footer p{
   display:flex;
   justify-content:center;/*中央*/
 }
+
+.button.tag {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem;
+    background: #f7f7f7;
+    border-left: solid 6px #58ad5a;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.button.red {
+    border-left-color: #ff3c3c;
+    color: #ff3c3c;
+    transition: 0.5s;
+}
+
+.button.red:hover{
+    border-left-color: rgb(255, 255, 0);
+    color: rgb(255, 255, 255);
+    background:red;
+}
+
+.button.green{
+   color: #58ad5a;
+   transition:0.5s;
+}
+
+.button.green:hover{
+	border-left-color: rgb(255, 255, 0);
+    color: rgb(255, 255, 255);
+    background:rgb(0, 255, 128);
+}
+
+.button.tag:active {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.11);
+    transform: translateY(2px);
+}
+
+
+
 /*footer p small{
   *position:relative;*/	/*↓の設定のために必要*/
   /*bottom:33px;*/			/*下からの位置*/

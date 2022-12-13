@@ -1,6 +1,8 @@
 package today.start_javaweb4.servlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -22,16 +24,22 @@ public class ResultServlet extends HttpServlet {
 
         int resCount = 0; //正誤に関わらず解いた数のカウント
         int colCount = 0; //正答数
-
+        List<Integer> wrongId = new ArrayList<Integer>(); //1があるところが間違い
 
 		for (int i = 1; i <= 100; i++) {
 			int tempYourAns = Integer.parseInt(request.getParameter("yourAns" + i));
 			int tempColAns = Integer.parseInt(request.getParameter("colAns" + i));
+			
 			if (tempYourAns == tempColAns) {
 				colCount++;
+				wrongId.add(2);
 			} else if (tempYourAns == 0) {
+				wrongId.add(0);
 				continue;
+			}else {
+				wrongId.add(1);
 			}
+			
 			resCount++;
 		}
 		
@@ -40,6 +48,7 @@ public class ResultServlet extends HttpServlet {
 		request.setAttribute("resCount", resCount);
 		request.setAttribute("colCount", colCount);
 		request.setAttribute("rank", rank);
+		request.setAttribute("wrongId", wrongId);
 		
 		String jsp = "/WEB-INF/jsp/result.jsp";
 		

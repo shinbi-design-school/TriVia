@@ -8,27 +8,27 @@
 <link rel="icon" href="${pageContext.request.contextPath}/css/images/favicon.ico">
 <title>TriVian | タイトル</title>
 <script type=text/javascript”>
-	resizeTo(1300,746);
+	resizeTo(1536,746);
 </script>
 </head>
 
-<body onload="resizeTo(1300,746)">
-  <top class="title">
+<body>
+  <div class="title">
     <p id="keytitle" title="ようこそ！">TriVian</p>
     <p id="subtitle">~トリビアン~</p>
-  </top>
+  </div>
 <audio src="${pageContext.request.contextPath}/css/chaim.mp3" autoplay></audio>
-  <h3>
-    <p>・これは制限時間付きのクイズ１００問ゲームです。</p>
-    <p>・〇✕のボタンを押して答えを選んで下さい。</p>
-    <p>・スタートを押したら回答ページへ進みます。</p>
-  </h3>
+  <div id="explain">
+    <h3>・これは制限時間付きのクイズ１００問ゲームです。</h3>
+    <h3>・〇✕のボタンを押して答えを選んで下さい。</h3>
+    <h3>・スタートを押したら回答ページへ進みます。</h3>
+  </div>
 
-  <div>
+  <div id = "start">
     <div class="chalk_w">
       <form method="get" action = "${pageContext.request.contextPath}/servlet/Quiz">
-	<input type = "submit" value = "スタート" >
-	</form>
+	    <input type = "submit" value = "スタート" >
+	  </form>
     </div>
   </div>
 
@@ -36,6 +36,7 @@
     <p><small>&copy; 2022 TriVian.</small></p>
   </footer>
   
+  <img id="nayuta" src="${pageContext.request.contextPath}/css/images/presentedbynayuta.png" alt="制作グループ名" title="制作グループ名">
 
 </body>
 </html>

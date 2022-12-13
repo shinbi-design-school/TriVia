@@ -4,6 +4,8 @@
   <% int colCount = (int)request.getAttribute("colCount"); %>
   <% int resCount = (int)request.getAttribute("resCount"); %>
   <% String rank = (String)request.getAttribute("rank");  %>
+  <% session.setAttribute("wrongId", request.getAttribute("wrongId")); %>
+  
   <%
     String message=String.format("あなたは%d問中%d問正解しました！<br>",resCount, colCount);
     if(rank.equals("金")){
@@ -44,9 +46,23 @@
   }
 
 </style>
+<script>
+	resizeTo(1536,746);
+</script>
 </head>
-<body>
+
+<body onload="resultbgm()">
+	<script>
+	function resultbgm(){
+    var music = new Audio("${pageContext.request.contextPath}/css/resultbgm.mp3");
+	var musicplay = function(){
+		music.play();
+	}
+	setTimeout(musicplay, 3000);
+}
+	</script>
 	<audio src="${pageContext.request.contextPath}/css/result.mp3" autoplay></audio>
+	
   <header>
     <div class="home">
       <a href="${pageContext.request.contextPath}/servlet/TopServlet">
@@ -86,15 +102,16 @@
     <img class="right" src="${pageContext.request.contextPath}/css/images/undoukai_goddess.png" alt="goddess" title="崇めよ崇めよ崇めよ崇めよ崇めよ(ry">
     </div>	
   <% }%>
-  
+  <div id="menu">
   <form id="title" method="GET" action="${pageContext.request.contextPath}/servlet/TopServlet">
-    <input type="submit" value="タイトルへ戻る" >
+    <input class="button tag red" type="submit" value="タイトルへ戻る" >
   </form>
   
   <form method="GET" action="${pageContext.request.contextPath}/servlet/Quizlist">
-    <input type="submit" value="正誤表" >
+    <input class="button tag green" type="submit" value="正誤表を見る" >
   </form>
   
+  </div>
   <footer>
     <p><small>&copy; 2022 TriVian.</small></p>
   </footer>
