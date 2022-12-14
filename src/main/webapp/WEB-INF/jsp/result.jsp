@@ -10,10 +10,10 @@
     String message=String.format("あなたは%d問中%d問正解しました！<br>",resCount, colCount);
     if(rank.equals("金")){
       message+="凄すぎる！!トリビア王に君はなる！！！";
-      rank="<span style= color:gold; font-size:2em;>金</span>";
+      rank="<span style= color:gold;font-size:2em;>金</span>";
     }else if(rank.equals("銀")){
       message+="十分凄い！！めちゃめちゃ物知りですねぇ...。";
-      rank="<span style= color:gray; font-size:1.5em;>銀</span>";
+      rank="<span style= color:gray;font-size:1.5em;>銀</span>";
     }else if(rank.equals("銅")){
       message+="ナイス健闘！！いいね！！";
       rank="<span style= color:maroon;>銅</span>";
@@ -54,7 +54,11 @@
 <body onload="resultbgm()">
 	<script>
 	function resultbgm(){
+		<%if(rank.matches(".*神.*")){ %>
+    var music = new Audio("${pageContext.request.contextPath}/css/youaregod.mp3");
+    <%  }else{ %>
     var music = new Audio("${pageContext.request.contextPath}/css/resultbgm.mp3");
+    <% } %>
 	var musicplay = function(){
 		music.play();
 	}
