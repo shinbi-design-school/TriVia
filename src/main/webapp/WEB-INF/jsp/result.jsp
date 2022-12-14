@@ -10,13 +10,13 @@
     String message=String.format("あなたは%d問中%d問正解しました！<br>",resCount, colCount);
     if(rank.equals("金")){
       message+="凄すぎる！!トリビア王に君はなる！！！";
-      rank="<span style= color:gold>金</span>";
+      rank="<span style= color:gold; font-size:2em;>金</span>";
     }else if(rank.equals("銀")){
       message+="十分凄い！！めちゃめちゃ物知りですねぇ...。";
-      rank="<span style= color:gray>銀</span>";
+      rank="<span style= color:gray; font-size:1.5em;>銀</span>";
     }else if(rank.equals("銅")){
       message+="ナイス健闘！！いいね！！";
-      rank="<span style= color:maroon>銅</span>";
+      rank="<span style= color:maroon;>銅</span>";
     }else if(rank.equals("道端の小石")){
       message+="実際のあなたには「<span style=color:red >意思</span>」すらない...。";
       rank="<span style= color:darkgrey>道端の小石</span>";
@@ -42,7 +42,7 @@
       background: -webkit-linear-gradient(0deg,#40E0D0, #FF8C00, #FF0080);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size:2em;
+      font-size:3em;
   }
 
 </style>

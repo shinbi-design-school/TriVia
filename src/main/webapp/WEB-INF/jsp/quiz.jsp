@@ -25,7 +25,7 @@ function ring() {
 	   button.play();
 	}
 </script>
-<body style="text-align:center;" onload="timer(20)">
+<body style="text-align:center;" onload="timer(5)">
 
 	<audio src="${pageContext.request.contextPath}/css/quiztime.mp3" autoplay loop></audio>
 	<audio id="button" preload="auto">
