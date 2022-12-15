@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap');
 
 /*背景画像(黒板)*/
 body{
@@ -15,28 +16,34 @@ body{
 .home{
   display: flex;
   justify-content: flex-end; /*右側へ配置*/
+
 }
 .home a img{
-  width: 60px;  	/*画像の幅*/
-  height: 60px; 	/*画像の高さ*/
-  padding: 30px;	/*位置*/
+  background:#ff00e8;
+  width: 40px;  	/*画像の幅*/
+  height: 40px; 	/*画像の高さ*/
+
   position: fixed;	/*固定*/
-  top: 30px;		/*上からの位置*/
-  right: 145px;
+  top: 40px;		/*上からの位置*/
+  right: 300px;
+  border:#2d801c 6px outset;
 }
 
 /*戻るボタン*/
 .back{
   display: flex;
   justify-content: flex-end; /*右側へ配置*/
+
 }
 .back img{
-  width: 60px;  	/*画像の幅*/
-  height: 60px; 	/*画像の高さ*/
-  padding: 30px;	/*位置*/
+  background:#f0ff19;
+  width: 20px;  	/*画像の幅*/
+  height: 20px; 	/*画像の高さ*/
+  padding: 10px;	/*位置*/
   position: fixed;	/*固定*/
   bottom: 30px;		/*下からの位置*/
-  right: 145px;
+  right: 400px;
+  border:#b0cb3a 6px outset;
 }
 
 /*フッター*/
@@ -78,4 +85,9 @@ tr.correctId{
 caption{
 	position: sticky;
 	
+}
+
+h1{
+	font-family: 'Yuji Boku', serif;
+	font-size:3em;
 }

@@ -43,7 +43,7 @@ public class ResultServlet extends HttpServlet {
 			resCount++;
 		}
 		
-		String rank = rankCalc(colCount); //4:トロフィなし 3:銅 2:銀 1:金 0:神　まあこの辺は要調整。
+		String rank = rankCalc(colCount); //4:道端の小石 3:銅 2:銀 1:金 0:神　まあこの辺は要調整。
 		
 		request.setAttribute("resCount", resCount);
 		request.setAttribute("colCount", colCount);
