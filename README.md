@@ -42,7 +42,7 @@ NAYUTAチームは久保島・染谷・大出の三人でチームの雰囲気�
 * 時間で結果発表になる。
 * 正誤表を一覧で表示する機能。  
 * 全タイトルタグにファビコン付き。  
-* ・全タイトルタグにファビコン付き。 
+
 <img alt="title" src="https://user-images.githubusercontent.com/108499166/207750539-c2f6d00c-c5ae-4129-8340-dcb0c8c97357.png" width="{500}">  
   
 ## TriVianの進め方/使い方  
